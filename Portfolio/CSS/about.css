@@ -1,0 +1,193 @@
+.header{
+    height: 3rem;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    display: grid;
+    grid-template-columns: 2fr 0.4fr;
+    align-items: center;
+    padding: 2.5rem 3rem;
+}
+.icon{
+    height: 100%;
+    width: 5rem;
+}
+.icon img{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+.about{
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.about span{
+    color: white;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+.about span::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom:0;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+.about span:hover::after{
+    width: 100%;
+}
+
+.contact_div{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25rem;
+    padding-left: 3rem;
+}
+.contact_div img{
+    height: 1.7rem;
+    width: 1.7rem;
+    transition: all 0.3s ease;
+}
+.contact_div img:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+
+
+.whole_div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.left_div{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 10rem 2rem 10rem 10rem;
+}
+.pro{
+    font-size: 2rem;
+    color: #004080;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+.project{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-right: -35rem;
+    z-index: 100;
+}
+.content{
+    width: fit-content;
+}
+.content span{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+.content p{
+    color: rgb(53, 53, 53);
+    font-size: 15px;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+}
+.content span1{
+    color: black;
+    font-weight: 550;
+}
+
+.content span2{
+    color: #004080;
+    font-weight: bold;
+}
+
+.content1{
+    width: fit-content;
+}
+.content1 p{
+    color: rgb(208, 203, 203);
+    font-size: 15px;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+}
+.content1 span{
+    color: rgb(255, 255, 255);
+    font-weight: 550;
+}
+.contactby{
+    margin-top: 7rem;
+}
+.con{
+    color: #004080;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.contactby p{
+    color: rgb(53, 53, 53);
+    font-size: 15px;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    margin-top: 5rem;
+}
+.final{
+    color: black;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.right_div{
+    background-color: #004080;
+}
+
+@media (max-width:845px) {
+    .project{
+        display: flex;
+        flex-direction: column;
+    }
+    .right_div{
+        display: none;
+    }
+    .about{
+        color: #004080;
+        margin-right: 5rem;
+    }
+    .left_div{
+        padding-right: 0;
+        padding-left: 8rem;
+    }
+     .about span::after{
+        background-color: #004080;
+    }
+    .project{
+        display: flex;
+    }
+    .content1 span{
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+
+}
+.content1 p{
+    color: rgb(53, 53, 53);
+    font-size: 15px;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+}
+.content1 span1{
+    color: black;
+    font-weight: 550;
+}
+}
